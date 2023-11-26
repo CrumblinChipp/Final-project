@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <title>
+            Family
+        </title>
+        <style>
+            body {
+            font-family: raleway;
+            background-image: url(thumbnails/background.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            }
+
+            h1 {
+            text-align: center;
+            font-size: 50px;
+            padding: 20px;
+            margin-top: 10px;
+            margin-bottom: 2px;
+            border-radius: 10px;
+            background-color: rgb(113, 141, 76);
+            color: rgb(222, 249, 183);
+            }
+
+            .div-to-differ-area {
+                display: block;
+                text-align: center;
+                margin-top: 20px;
+            }
+
+            .button-to-differ-area {
+            width: 100px;
+            margin-left: 35px;
+            padding: 5px;
+            border-radius: 25px;
+            border: 2px;
+            background-color: rgb(103, 129, 68);
+            transition: all 0.5s ease-in-out;
+            }
+
+            .img-button {
+                width: 80px;
+                margin: auto;
+                filter: brightness(0) invert(1);
+                transition: all 0.5s ease-in-out;
+            }
+
+            .button-to-differ-area:hover {
+                background-color: rgb(222, 249, 183);
+                box-shadow: 10px 10px 5px rgb(66, 66, 66, 0.4);
+                transform: translateY(-8px);
+                cursor: pointer;
+            }
+
+            .button-to-differ-area:hover .img-button {
+                filter: brightness(9%);
+
+            }
+
+            .family-description {
+                text-align: center;
+                margin: auto;
+                display: block;
+                font-size: 20px;
+                background-color: rgb(222, 249, 183);
+                color: rgb(103, 129, 68);
+                padding: 25px; 
+                margin-top: 20px;  
+                width: 1100px;   
+                border-radius: 20px;        
+            }
+
+            .div-family-icon {
+                display: inline-block;
+                text-align: center;
+                margin-top: 20px;
+                margin-left: 18% ;
+            }
+
+            .family-icon {
+                background-color: rgb(100, 129, 68);
+                color: rgb(222, 249, 183);  
+                font-size: 25px;
+                width: 300px;
+                padding: 25px;
+                border-radius: 15px;
+                transition: all 0.5s ease-in-out;
+            }
+
+            .img-family {
+                margin: auto;
+                width: 300px;
+                filter: brightness(0) invert(1);
+                transition: all 0.5s ease-in-out;
+            }
+
+            strong {
+                display: inline-block;
+                margin: auto;
+                font-size: 50px;
+            }
+
+            .family-icon:hover {
+                background-color: rgb(222, 249, 183);
+                color: rgb(103, 129, 68);
+                box-shadow: 25px 15px 15px rgb(66, 66, 66, 0.4);
+                border-radius: 20px;
+                transform: translateY(-15px);
+                cursor: pointer;
+            }
+
+            .family-icon:hover .img-family {
+                filter: brightness(9%);
+            }
+
+            table {
+            display: block;
+            width: 1100px;
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.5em;
+            padding: 20px;
+            margin: auto;
+            margin-top: 10px;
+            border-radius: 20px;
+            border-color: rgb(113, 141, 76);
+            background-color: rgb(222, 249, 183);
+            color: rgb(113, 141, 76);
+            transition: all 1s ease-in-out;
+            }
+
+            .table-img {
+                text-align: center;
+                width: 350px;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <h1>Family Members</h1>
+        <div class="div-to-differ-area">
+            <a href="education.html">
+            <button class="button-to-differ-area">
+                <img class="img-button" src="thumbnails/thumbnail_1.png">
+            </button>
+        </a>
+        <a href="main.html">
+            <button class="button-to-differ-area">
+                <img class="img-button" src="thumbnails/home.png">
+            </button>
+        </a>   
+        <a href="interest.html">
+            <button class="button-to-differ-area">
+                <img class="img-button" src="thumbnails/thumbnail_3.png">
+            </button>
+        </a>
+
+        </div>
+
+        <p class="family-description">
+            Our parents were raised on the poor side of society. Mother has 12 siblings, and her parents were old enough to have experienced the Japanese 
+            colonization. Father's side is divided by religion, leading to both of them being conservatives. My running theory is that my parents' minds 
+            are woven around where almost anything still runs its course around ignorance and plain black and white, whereas my generation's minds were built 
+            around making everything make sense.
+
+<br><br>There are things we cannot talk about within the family, especially with our parents. Showing affection isn't a big thing in our family, and neither is 
+apologizing; we ignore each other until the fire of the argument burns down. Our parents are religious people, unlike us siblings. Unfortunately, we learned 
+to question things and make sense of everything, leading to religion not making sense to us.
+
+<br><br>Our family is close, at least that is how our extended family describes it. They say we're just like a group of friends, able to speak casually with each 
+other and joke around. I do agree that we have quite a bond when it comes to gathering and having fun. However, there is always something hidden when it 
+comes to a happy family.
+
+        </p>
+
+        <div class="div-family-icon" id="revealButton-1">
+            <h2 class="family-icon"
+            ><img class="img-family" src="thumbnails/icon-1.png">
+                <strong>Parents</strong>
+            </h2>
+
+        </div>
+
+        <div class="div-family-icon" id="revealButton-2">
+            <h2 class="family-icon"
+            >
+                <img class="img-family" src="thumbnails/icon-2.png">
+                <strong>Siblings</strong>
+            </h2>
+
+        </div>
+
+        <div class="div-sibling-desciription" id="hiddenParagraph-2" style="display: none;">
+            <p>
+                <table>
+                    <td>
+                    <img class="table-img" src="thumbnails/siblings.jpg">
+                    </td>
+                    <td>
+                    <h2>Rena Marcelo</h2>
+                    The eldest sister graduated in fine arts and is currently staying at home. The two of us have a two-faced relationship, 
+                    experiencing the most fights, yet both agreeing on certain matters.
+
+                    </td>
+                    <td>
+                        <h2>Richie Oliver Marcelo</h2>
+                        The eldest brother graduated earlier this year in petroleum engineering and started working right after leaving school. 
+                        He has a passion for money, is resourceful and innovative. We had a rough start, ignoring each other's existence even though 
+                        we shared the same room. However, as we grew older, we were able to patch some of the cracks.
+                    </td>
+
+                    <td>
+                        <h2>Riya Marcelo</h2>
+                        The younger sister, one of the twins, is an achiever aiming for the highest she can achieve. She is currently in her last year of 
+                        senior high school.
+                    </td>
+                    
+                    <td>
+                        <h2>Roi Marcelo</h2>
+                        The youngest brother, the other twin, is the "trying hard to be the black sheep" sibling. He is quite attached to his 
+                        current friend group, leading to bad influences that poison our view of him even more.   
+                    </td>
+
+                </table>
+            </p>
+        </div>
+
+        <script>
+            document.getElementById('revealButton-2').addEventListener('click', function() {
+              var paragraph = document.getElementById('hiddenParagraph-2');
+              if (paragraph.style.display === 'none') {
+                paragraph.style.display = 'block';
+              } else {
+                paragraph.style.display = 'none';
+              }
+            });
+          </script>
+
+        </div>
+        <div class="div-parent-description" id="hiddenParagraph-1" style="display: none;">
+            <p>
+                <table>
+                    <td>
+                    <img class="table-img" src="thumbnails/parents.jpg">
+                    </td>
+                    <td>
+                    <h2>Divina Marcelo</h2>
+                    Mother is a strong-spirited woman who still takes care of us every day. A housewife who works around the house, 
+                    taking care of us, her children, every single day. She has a very accepting nature, though she still lives in her generation.
+                    </td>
+                    <td>
+                        <h2>Rene Marcelo</h2>
+                        Father works as a mechanic on his own place, putting in six days a week with Sunday as his rest day. The salary is dependent 
+                        on how much work arrives but is still enough to provide for us to live comfortably. He has the strongest say in the house, and 
+                        with that comes his giving nature.
+                    </td>
+
+                </table>
+            </p>
+        </div>
+
+        <script>
+            document.getElementById('revealButton-1').addEventListener('click', function() {
+            var paragraph = document.getElementById('hiddenParagraph-1');
+            if (paragraph.style.display === 'none') {
+                paragraph.style.display = 'block';
+            } else {
+                paragraph.style.display = 'none';
+            }
+            });
+        </script>
+
+    </body>
+</html>

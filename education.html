@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <title>
+            Education
+        </title>
+        <style>
+            body {
+            background-image: url(thumbnails/background.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            }
+
+            h1 {
+            text-align: center;
+            font-size: 50px;
+            font-family: raleway;
+            padding: 20px;
+            margin-top: 10px;
+            margin-bottom: 2px;
+            border-radius: 10px;
+            background-color: rgb(113, 141, 76);
+            color: rgb(222, 249, 183);
+            }
+
+            h2 {
+            width: 1000px;
+            text-align: center;
+            font-size: 30px;
+            font-family: raleway;
+            padding: 15px;
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            border-radius: 20px;
+            border-color: rgb(113, 141, 76);
+            background-color: rgb(222, 249, 183);
+            color: rgb(113, 141, 76);
+            cursor: pointer;
+            }
+
+            p {
+            width: 1000px;
+            text-align: center;
+            font-size: 18px;
+            font-family: raleway;
+            line-height: 1.5em;
+            padding: 20px;
+            margin: auto;
+            margin-top: 10px;
+            border-radius: 20px;
+            border-color: rgb(113, 141, 76);
+            background-color: rgb(222, 249, 183);
+            color: rgb(113, 141, 76);
+            transition: all 1s ease-in-out;
+            }
+            
+            .div-to-differ-area {
+                display: block;
+                text-align: center;
+                margin-top: 20px;
+            }
+
+            .button-to-differ-area {
+            width: 100px;
+            margin-left: 35px;
+            padding: 5px;
+            border-radius: 25px;
+            border: 2px;
+            background-color: rgb(103, 129, 68);
+            transition: all 0.5s ease-in-out;
+            }
+
+            .img-button {
+                width: 80px;
+                margin: auto;
+                filter: brightness(0) invert(1);
+                transition: all 0.5s ease-in-out;
+            }
+
+            .button-to-differ-area:hover {
+                background-color: rgb(222, 249, 183);
+                box-shadow: 10px 10px 5px rgb(66, 66, 66, 0.4);
+                transform: translateY(-8px);
+                cursor: pointer;
+            }
+
+            .button-to-differ-area:hover .img-button {
+                filter: brightness(9%);
+
+            }
+
+
+
+
+
+        </style>
+
+    </head>
+    <body>
+        <h1>Educational Background</h1>
+        <div class="div-to-differ-area">
+          <a href="family.html">
+            <button class="button-to-differ-area">
+                <img class="img-button" src="thumbnails/thumbnail_2.png">
+            </button>
+          </a>
+          <a href="main.html">
+            <button class="button-to-differ-area">
+                <img class="img-button" src="thumbnails/home.png">
+            </button>
+          </a>   
+          <a href="interest.html">
+            <button class="button-to-differ-area">
+                <img class="img-button" src="thumbnails/thumbnail_3.png">
+            </button>
+          </a>
+
+      </div>
+
+        <h2 id="revealButton-1"  >Grade School (2008-2014)</h2>
+        <p id="hiddenParagraph-1" style="display: none;">
+            It's all a blur now, random blotches of memories from my grade school days. 
+            I wanted to believe I was a very smart child, almost an adult due to my younger sibling. 
+            Little did I know that adulthood wasn't just about screaming and crying children, 
+            but also about screaming and crying adults.
+
+            <br><br>I attended two elementary schools: Ambulong Elementary School in my hometown and Batangas City South Elementary School, 
+            which was closer to my father's workplace. I transferred in the second grade. The change didn't affect me much, 
+            as we stayed in Ambulong for the first year before moving to a rented lot near my father's work. 
+            I mentioned earlier that I thought I was a smart kid, and this was reinforced when I transferred to South Elementary and 
+            was ranked first in my class for my first two years, second grade and third grade. I caught on quickly, 
+            memorized lines easily, and understood them well enough to explain them back in a clear manner. With all this praise, 
+            I developed a bit of a big head, after all, being favored by teachers has a significant impact on a child. In the fourth 
+            grade, I was transferred to the science class, the separate class for the "smart kids" as it was called. With my nonchalant 
+            attitude and big head, fueled by the attention of my previous teachers, I believed I could ace the class without trying, 
+            a mistake I realized quite early on but never acted on.
+
+            <br><br>I had my first traumatic experience, well, at least for a child, when I was in the fourth grade. 
+            It was the first time my parents were called to school for my bad behavior, other than the time I wet my pants. 
+            I was humiliated in front of the class, and it has scarred me to this day. I can even remember the words my teacher said 
+            to me that day.
+
+            <br><br>But time passes, and the present becomes the past. I continued to do the bare minimum, just enough to get by. 
+            In the sixth grade, I was removed from the science class. It hit me hard when I saw the list of students and my name wasn't 
+            there. I didn't even expect myself to be so affected. But the school year went on. Interestingly, the number of sixth-grade 
+            students was so small that there were only 20 students per class and only four sections, and the number of students kept 
+            decreasing, which surprisingly affected me a lot. For the first quarter of the school year, I was transferred to multiple 
+            sections. I had to introduce myself again and again as I was moved to another section. Some transfers lasted just a morning,
+             and others a week, making it difficult for me to socialize. That is until I was retransferred to the science class again. 
+             This is when the world started to make sense in a way, realizing that the world doesn't revolve around me and it's not all 
+             sunshine and rainbows. 
+        </p>
+        <script>
+            document.getElementById('revealButton-1').addEventListener('click', function() {
+              var paragraph = document.getElementById('hiddenParagraph-1');
+              if (paragraph.style.display === 'none') {
+                paragraph.style.display = 'block';
+              } else {
+                paragraph.style.display = 'none';
+              }
+            });
+          </script>
+        <h2 id="revealButton-2">Junior High School (2014-2018)</h2>
+        <p id="hiddenParagraph-2" style="display: none;">
+            I attended Batangas National High School, more commonly known as BANAHIS. It was during this time that I began to 
+            experience the common adolescent desire to belong.
+
+            <br><br>In my eagerness to fit in, I became a people-pleaser, saying yes to everything, even at the expense of my own 
+            health and well-being. Fortunately, most of those who took advantage of my generosity were not malicious. It was also 
+            during this time that I discovered my passion for learning and exploring topics beyond what was taught in school or on 
+            television. The internet became my gateway to a vast world of knowledge.
+
+            <br><br>My family had an unspoken rule that children could only have a phone after finishing high school. This rule had 
+            worked well for my two older siblings, as technology was not as prevalent during their time. They were able to navigate 
+            their school years without relying heavily on their phones, using them primarily for communication. However, I was an 
+            exception. I was given a tablet when I was in eighth grade. No one questioned my mother's decision to give me the tablet.
+
+            <br><br>I was the first in my family to have access to the internet at an early age, so I took great care of my tablet. 
+            However, it was cracked before I even finished eighth grade, rendering it unusable. It was broken by one of my classmates, 
+            but I never identified the culprit. I panicked over how to explain the broken tablet to my parents. I hid the damaged 
+            device in my dresser, hoping my parents would not find it. My attempt at concealment was unsuccessful, as my younger 
+            sister discovered the broken tablet and promptly reported it to our parents. As expected, my parents were furious.
+
+            <br><br>My brief access to the internet was cut short due to the tablet's destruction, leaving me relatively uninformed 
+            until I finished junior high school.
+        </p>
+        <script>
+            document.getElementById('revealButton-2').addEventListener('click', function() {
+              var paragraph = document.getElementById('hiddenParagraph-2');
+              if (paragraph.style.display === 'none') {
+                paragraph.style.display = 'block';
+              } else {
+                paragraph.style.display = 'none';
+              }
+            });
+          </script>
+
+        <h2 id="revealButton-3">Senior High School (2018-2020)</h2>
+        <p id="hiddenParagraph-3" style="display: none;">
+            I attended STI College Batangas for my senior high school years. This was where I found my true friends, friends I can 
+            still count on to this day.
+
+            <br><br>Taking the STEM course, I was certain that I would be pursuing an engineering course in college, but I was still 
+            unsure about which specific field. I hadn't embarked on a self-discovery journey yet. Still carrying my nonchalant 
+            personality, I had the chance to achieve better grades along with my classmates, but I didn't take it. There was no 
+            particular reason; I just didn't see the point in doing so. It was also during this time that I and my group were 
+            introduced to a form of worship. Letting out emotions and hearing others' stories about their hardships turned out not 
+            to be my thing. I still joined them for these activities because I enjoyed their company, but my mind was always elsewhere.
+
+            <br><br>I became a part of the school's student council, which was not my forte at all. I first became the class president. 
+            It turned out that being able to silence the rowdy boys in class gave me an immediate advantage for the position. 
+            For the student council elections, I didn't win the spot representing the STEM course, which I accepted wholeheartedly. 
+            The workload was already too much as we were graduating, and my classmates kept electing me for every position, which only 
+            embarrassed me because I kept losing. A few days later, on the day when the candidates were campaigning around campus, 
+            I was pulled out of class and told to run for a position. When I asked why, they said the original candidate was
+             transferring schools and I was the next best thing. It was a roundabout way of saying I was their spare. So, I had a 
+             couple of hours to learn the campaign jingle, their names, and their projects before they went around campus that same 
+             day. On the day of the election, I was already prepared to lose. On the day of campaigning, I was a mess, constantly 
+             getting their slogan wrong. But it turned out that I was a hit with the 11th graders, and they voted for me in a 
+             landslide. Forced to take on the position, I tried my best to do what I could with a mental note to never do this 
+             again in college.
+        </p>
+        <script>
+            document.getElementById('revealButton-3').addEventListener('click', function() {
+              var paragraph = document.getElementById('hiddenParagraph-3');
+              if (paragraph.style.display === 'none') {
+                paragraph.style.display = 'block';
+              } else {
+                paragraph.style.display = 'none';
+              }
+            });
+          </script>
+        <h2 id="revealButton-4">College (2020-present)</h2>
+        <p id="hiddenParagraph-4" style="display: none;">
+            Even before stepping foot on campus, a series of events had already unfolded that would shape my college experience, 
+            beginning with the admissions process.
+
+        <br><br>Having grown close to my high school friends, I made a decision that would ultimately cost me four years of pursuing 
+        my true passions.
+        
+        <br><br>On admissions day, I joined the hopeful throng of students vying for a spot at BSU. My classmates and I discussed 
+        our preferred programs, and the majority, influenced by their choices, opted for civil engineering. I, too, fell into this 
+        pattern, reasoning that choosing the same program would increase our chances of staying together and avoid the dreaded 
+        separation.
+
+        <br><br>Initially, my program preferences were computer engineering, followed by mechanical engineering, and chemical 
+        engineering as a fallback. Programming had always fascinated me, and I was intrigued by the inner workings of codes. 
+        However, unfortunately, my curiosity wasn't strong enough to override my fear of being separated from my friends.
+
+        <br><br>When my turn to register arrived, I altered my program lineup to civil, computer, and chemical engineering, 
+        not too far from my original aspirations.
+
+        <br><br>As confirmation letters rolled out, I discovered that I was the only one in my friend group to have secured a 
+        spot in civil engineering. Due to my lack of awareness, I didn't even attempt to shift programs before classes began.
+
+        <br><br>Then came the pandemic.
+
+        <br><br>For someone who already struggled to socialize in the traditional school setting, online classes proved to be 
+        detrimental to my social life. The absence of peers my age and the lack of external interaction pushed me further into 
+        introversion and lowered my self-esteem. These were undoubtedly some of the most challenging years of my life.
+        </p>
+
+        <script>
+            document.getElementById('revealButton-4').addEventListener('click', function() {
+              var paragraph = document.getElementById('hiddenParagraph-4');
+              if (paragraph.style.display === 'none') {
+                paragraph.style.display = 'block';
+              } else {
+                paragraph.style.display = 'none';
+              }
+            });
+          </script>
+
+    </body>
+</html>

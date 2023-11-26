@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <title>
+            Personal Interests
+        </title>
+        <style>
+            body {
+            font-family: raleway;
+            background-image: url(thumbnails/background.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            }
+
+            h1 {
+            text-align: center;
+            font-size: 50px;
+            padding: 20px;
+            margin-top: 10px;
+            margin-bottom: 2px;
+            border-radius: 10px;
+            background-color: rgb(113, 141, 76);
+            color: rgb(222, 249, 183);
+            }
+
+            .div-to-differ-area {
+                display: block;
+                text-align: center;
+                margin-top: 20px;
+            }
+
+            .button-to-differ-area {
+            width: 100px;
+            margin-left: 35px;
+            padding: 5px;
+            border-radius: 25px;
+            border: 2px;
+            background-color: rgb(103, 129, 68);
+            transition: all 0.5s ease-in-out;
+            }
+
+            .img-button {
+                width: 80px;
+                margin: auto;
+                filter: brightness(0) invert(1);
+                transition: all 0.5s ease-in-out;
+            }
+
+            .button-to-differ-area:hover {
+                background-color: rgb(222, 249, 183);
+                box-shadow: 10px 10px 5px rgb(66, 66, 66, 0.4);
+                transform: translateY(-8px);
+                cursor: pointer;
+            }
+
+            .button-to-differ-area:hover .img-button {
+                filter: brightness(9%);
+
+            }
+
+            .div-interest-icon {
+                display: inline-block;
+                text-align: center;
+                margin-top: 20px;
+                margin-left: 18% ;
+            }
+
+            .interest-icon {
+                background-color: rgb(100, 129, 68);
+                color: rgb(222, 249, 183);  
+                font-size: 25px;
+                width: 300px;
+                padding: 25px;
+                border-radius: 15px;
+                transition: all 0.5s ease-in-out;
+            }
+
+            .img-family {
+                margin: auto;
+                width: 300px;
+                filter: brightness(0) invert(1);
+                transition: all 0.5s ease-in-out;
+            }
+
+            strong {
+                display: inline-block;
+                margin: auto;
+                font-size: 50px;
+            }
+
+            .interest-icon:hover {
+                background-color: rgb(222, 249, 183);
+                color: rgb(103, 129, 68);
+                box-shadow: 25px 15px 15px rgb(66, 66, 66, 0.4);
+                border-radius: 20px;
+                transform: translateY(-15px);
+                cursor: pointer;
+            }
+
+            .interest-icon:hover .img-family {
+                filter: brightness(9%);
+            }
+
+            table {
+            display: block;
+            width: 1100px;
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.5em;
+            padding: 20px;
+            margin: auto;
+            margin-top: 10px;
+            border-radius: 20px;
+            border-color: rgb(113, 141, 76);
+            background-color: rgb(222, 249, 183);
+            color: rgb(113, 141, 76);
+            transition: all 1s ease-in-out;
+            }
+
+            td {
+                margin-left: 20px;
+                padding-left:40px;
+            }
+
+            .music-icon {
+                width: 150px;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <h1>Personal Interests</h1>
+        <div class="div-to-differ-area">
+            <a href="education.html">
+            <button class="button-to-differ-area">
+                <img class="img-button" src="thumbnails/thumbnail_1.png">
+            </button>
+        </a>
+        <a href="main.html">
+            <button class="button-to-differ-area">
+                <img class="img-button" src="thumbnails/home.png">
+            </button>
+        </a>   
+        <a href="family.html">
+            <button class="button-to-differ-area">
+                <img class="img-button" src="thumbnails/thumbnail_2.png">
+            </button>
+        </a>
+
+        </div>
+
+        <div class="div-interest-icon" id="revealButton-1">
+            <h2 class="interest-icon"
+            ><img class="img-family" src="thumbnails/interest-icon-1.jpg">
+                <strong>Music</strong>
+            </h2>
+
+        </div>
+
+        <div class="div-interest-icon" id="revealButton-2">
+            <h2 class="interest-icon"
+            >
+                <img class="img-family" src="thumbnails/interest-icon-2.jpg">
+                <strong>Movie</strong>
+            </h2>
+
+        </div>
+
+        <div class="div-interest-description" id="hiddenParagraph-1" style="display: none;">
+            <table>
+                <td>
+                    <h2>
+                        Music
+                    </h2>
+                    Category for a music to be in my liking:
+                    <ul>
+                        <li>I can sing along with it</li>
+                        <li>Fast paced</li>
+                        <li>There is a story being told</li>
+                        <li>Energetic notes</li>
+                        <li>loud enough to block out my thoughts</li>
+                    </ul>
+                </td>
+                <td>
+                    <img class="music-icon" src="thumbnails/music-icon-1.webp">
+                    <br>Melanie Martinez
+                    <br><img class="music-icon" src="thumbnails/music-icon-2.webp">
+                    <br>Dasu
+                    <br><img class="music-icon" src="thumbnails/music-icon-3.webp">
+                    <br>The Crane Wives
+                    <br><img class="music-icon" src="thumbnails/music-icon-4.webp">
+                    <br>Hamilton Musical
+                </td>
+                <td>
+                    <br><img class="music-icon" src="thumbnails/music-icon-5.webp">
+                    <br>Atarashii Gakko!!
+                    <br><img class="music-icon" src="thumbnails/music-icon-6.webp">
+                    <br>Aurora
+                    <br><img class="music-icon" src="thumbnails/music-icon-7.webp">
+                    <br>Dear Evan Hansen Musical
+                    <br><img class="music-icon" src="thumbnails/music-icon-8.webp">
+                    <br>Six Musical
+                </td>
+                <td>
+                    <br><img class="music-icon" src="thumbnails/music-icon-9.webp">
+                    <br>Fish in a Birdcage
+                    <br><img class="music-icon" src="thumbnails/m.jpg">
+                    <br>JT Music
+                    <br><img class="music-icon" src="thumbnails/music-icon-10.webp">
+                    <br>Ride the Cyclone Musical
+                    <br><img class="music-icon" src="thumbnails/music-icon-11.webp">
+                    <br>Heathers Musical
+                </td>
+            </table>
+        </div>
+
+        <script>
+            document.getElementById('revealButton-1').addEventListener('click', function() {
+              var paragraph = document.getElementById('hiddenParagraph-1');
+              if (paragraph.style.display === 'none') {
+                paragraph.style.display = 'block';
+              } else {
+                paragraph.style.display = 'none';
+              }
+            });
+          </script>
+
+        </div>
+
+        <div class="div-interest-description" id="hiddenParagraph-2" style="display: none;">
+            <table>
+                <td>
+                    <h2>Movie</h2>
+                    Category for Movies or TV shows for it to be in my liking:
+                    <li>Thriller, Horror, Action, Adventure, Fantasy</li>
+                    <li>The characters are making Logical decisions</li>
+                    <li>Zombie Apocalypse</li>
+                    <li>Iconic</li>
+                    <li>A way of an escape for the stress of reality</li>
+                </td>
+                <td>
+                    <br><img class="music-icon" src="thumbnails/movie-icon-1.png">
+                    <br>White Chicks
+                    <br><img class="music-icon" src="thumbnails/movie-icon-2.jpg">
+                    <br>The Magicians
+                    <br><img class="music-icon" src="thumbnails/movie-icon-3.png">
+                    <br>Supernatural
+                    <br><img class="music-icon" src="thumbnails/movie-icon-4.png">
+                    <br>Kingdom
+                </td>
+                <td>
+                    <br><img class="music-icon" src="thumbnails/movie-icon-5.png">
+                    <br>Sweet Home
+                    <br><img class="music-icon" src="thumbnails/movie-icon-6.png">
+                    <br>Gen V
+                    <br><img class="music-icon" src="thumbnails/movie-icon-7.png">
+                    <br>Junji Ito Collections
+                    <br><img class="music-icon" src="thumbnails/movie-icon-8.png">
+                    <br>Love, Death, and Robots
+                </td>
+                <td>
+                    <br><img class="music-icon" src="thumbnails/movie-icon-9.png">
+                    <br>Castlevania
+                    <br><img class="music-icon" src="thumbnails/movie-icon-10.png">
+                    <br>The Saga of Tanya the Evil
+                    <br><img class="music-icon" src="thumbnails/movie-icon-11.png">
+                    <br>Unbrella Academy
+                    <br><img class="music-icon" src="thumbnails/movie-icon-12.png">
+                    <br>The Amazing World of Gumball
+                </td>
+            </table>
+        </div>
+
+        <script>
+            document.getElementById('revealButton-2').addEventListener('click', function() {
+            var paragraph = document.getElementById('hiddenParagraph-2');
+            if (paragraph.style.display === 'none') {
+                paragraph.style.display = 'block';
+            } else {
+                paragraph.style.display = 'none';
+            }
+            });
+        </script>
+
+    </body>
+</html>

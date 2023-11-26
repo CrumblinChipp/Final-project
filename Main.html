@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+  <title>Marcelo</title>
+
+  <style>
+
+      body {
+        background-image: url(thumbnails/background.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+
+      .basic-information {
+        width: 700px;
+        font-size: 25px;
+        border-collapse: collapse;
+        margin: auto;
+        margin-top: 50px;
+      }
+    
+      .basic-information td {
+        padding: 5px;
+        border: 3px solid rgb(113, 141, 76); 
+      }
+      
+      .basic-information th {
+        background-color: rgb(222, 249, 183);
+      }
+
+      .basic-information img {
+        width: 300px;
+        border-radius: 5px;
+      }
+      .header_1 {
+        text-align: center;
+        font-size: 50px;
+        font-family: raleway;
+        padding: 20px;
+        margin-top: 10px;
+        border-radius: 10px;
+        background-color: rgb(113, 141, 76);
+        color: rgb(222, 249, 183);
+      }
+      .div-popup {
+        display: inline-block;
+        margin-top: 100px;
+        margin-left: 133px;
+        margin-bottom: 100px;
+        width: 300px;
+      }
+
+      .entry {
+        padding: 10px;
+        padding-bottom: 20px;
+        font-size: 25px;
+        font-family: raleway;
+        background-color: rgb(103, 129, 68);
+        color: rgb(222, 249, 183);
+        border-radius: 20px;
+        border-color: white;
+        border: 1px;
+        transition: background-color 0.8s, color 0.8s, box-shadow 1s, transform 0.5s ease-in-out;
+        animation: morph 5s ease-in-out;
+      }
+
+      .entry:hover {
+        background-color: rgb(222, 249, 183);
+        color: rgb(103, 129, 68);
+        box-shadow: 25px 15px 15px rgb(66, 66, 66, 0.4);
+        border-radius: 20px;
+        transform: translateY(-15px);
+        cursor: pointer;
+      }
+      .thumbnail {
+        display: block;
+        width: 300px;
+        filter: brightness(0) invert(1);
+        transition: filter 0.8s;
+      }
+
+      .entry:hover .thumbnail {
+        filter: brightness(9%);
+      }
+  
+      .entry:hover .subtitle-1 {
+        padding-top: 15px;
+        padding-bottom: 1px;
+        display: block;
+        font-size: 18px;
+        color: rgb(222, 249, 183);
+        transition: background-color 0.5s, color 0.5s;
+      }
+      .entry:hover .subtitle-1 {
+        color:rgb(103, 129, 68);
+      }
+  </style>
+    
+</head>
+
+<body>
+  <h1 class="header_1">Russell B.Marcelo</h1>
+
+  <table class="basic-information">
+      <tbody>
+        <tr>
+          <td style="width: 150px;">
+            <img src="thumbnails/profile.jpg" alt="Character sheet image">
+          </td>
+          <td style="width: 350px;">
+            <h2>Basic Information</h2>
+            <ul>
+              <li>Full Name: Russell B. Marcelo</li>
+              <li>Gender: Male</li>
+              <li>Age: 21</li>
+              <li>Section: CS-1101</li>
+              <li>Residency Year: 4th year</li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+  <div class="div-popup">
+      <a href="education.html" target=”_blank”>
+      <button id="revealButton-1" class="entry">
+          <span>
+              <img class='thumbnail' src="thumbnails/thumbnail_1.png">
+                  <strong>EDUCATIONAL BACKGROUND</strong>
+                  <span id="hiddenParagraph-1" style="display: none;" class="subtitle-1">
+                      Where did Russell went in grade school and his journey through them.
+                  </span>
+          </span>
+      </button>
+      </a>
+  </div>
+  <script>
+      document.getElementById('revealButton-1').addEventListener('mouseenter', function() {
+        var paragraph = document.getElementById('hiddenParagraph-1');
+        if (paragraph.style.display === 'none') {
+          paragraph.style.display = 'block';
+        } else {
+          paragraph.style.display = 'none';
+        }
+      });
+      document.getElementById('revealButton-1').addEventListener('mouseleave', function() {
+        var paragraph = document.getElementById('hiddenParagraph-1');
+        if (paragraph.style.display === 'none') {
+          paragraph.style.display = 'block';
+        } else {
+          paragraph.style.display = 'none';
+        }
+      });
+    </script>
+
+  <div class="div-popup">
+    <a href="family.html" target=”_blank”>
+      <button id="revealButton-2" class="entry">
+          <span>
+              <img class='thumbnail' src="thumbnails/thumbnail_2.png">
+                  <strong>FAMILY MEMBERS</strong>
+                  <span id="hiddenParagraph-2" style="display: none;" class="subtitle-1">
+                      Who are the people that raised and nurtured Russell's to be the person he is now.
+                  </span>
+          </span>
+      </button>
+    </a>
+  </div>
+
+  <script>
+      document.getElementById('revealButton-2').addEventListener('mouseenter', function() {
+        var paragraph = document.getElementById('hiddenParagraph-2');
+        if (paragraph.style.display === 'none') {
+          paragraph.style.display = 'block';
+        } else {
+          paragraph.style.display = 'none';
+        }
+      });
+      document.getElementById('revealButton-2').addEventListener('mouseleave', function() {
+        var paragraph = document.getElementById('hiddenParagraph-2');
+        if (paragraph.style.display === 'none') {
+          paragraph.style.display = 'block';
+        } else {
+          paragraph.style.display = 'none';
+        }
+      });
+    </script>
+
+  <div class="div-popup">
+    <a href="interest.html" target=”_blank”>
+      <button id="revealButton-3" class="entry">
+          <span>
+              <img class='thumbnail' src="thumbnails/thumbnail_3.png">
+                  <strong>PERSONAL INTERESTS</strong>
+                  <span id="hiddenParagraph-3" style="display: none;" class="subtitle-1">
+                      What are Russell's habit, favorite pass-time, and interest when it comes to entertainment.
+                  </span>
+          </span>
+      </button>
+    </a>
+  </div>
+
+  <script>
+      document.getElementById('revealButton-3').addEventListener('mouseenter', function() {
+        var paragraph = document.getElementById('hiddenParagraph-3');
+        if (paragraph.style.display === 'none') {
+          paragraph.style.display = 'block';
+        } else {
+          paragraph.style.display = 'none';
+        }
+      });
+      document.getElementById('revealButton-3').addEventListener('mouseleave', function() {
+        var paragraph = document.getElementById('hiddenParagraph-3');
+        if (paragraph.style.display === 'none') {
+          paragraph.style.display = 'block';
+        } else {
+          paragraph.style.display = 'none';
+        }
+      });
+    </script>
+
+
+
+</body>
+
+</html>
